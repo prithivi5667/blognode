@@ -12,8 +12,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "server": "nodemon server --ignore client"
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+
     
   },
   "author": "",
